@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello Rigo with Vanilla.js</title>
-    <script type="text/javascript" src="/src/app.js"></script>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -19,48 +18,37 @@
       crossorigin="anonymous"
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
-    <script>
-      const who = ["The dog", "My grandma", "His turtle", "My bird"];
-      const action = ["ate", "peed", "crushed", "broke"];
-      const what = ["my homework", "the keys", "the car"];
-      const when = [
-        "before the class",
-        "right on time",
-        "when I finished",
-        "during my lunch",
-        "while I was praying"
-      ];
-
-      function getRandomItem(arr) {
-        // get random index value
-        const randomIndex = Math.floor(Math.random() * arr.length);
-        // get random item
-        return arr[randomIndex];
-      }
-
-      function generateExcuse() {
-        let whoRandom = getRandomItem(who);
-        let actionRandom = getRandomItem(action);
-        let whatRandom = getRandomItem(what);
-        let whenRandom = getRandomItem(when);
-        let excuse =
-          whoRandom + " " + actionRandom + " " + whatRandom + " " + whenRandom;
-        //alert excuse;
-        document.getElementById("RandomTextHere").innerHTML = excuse;
-      }
-    </script>
+    <link rel="stylesheet" href="style.css" crossorigin="anonymous" />
+    <script type="text/javascript" src="funciones.js"></script>
   </head>
+  <script>
+    function getExcuse() {
+      let whoRandom = getRandomItem(who);
+      let actionRandom = getRandomItem(action);
+      let whatRandom = getRandomItem(what);
+      let whenRandom = getRandomItem(when);
+      let excuse =
+        whoRandom + " " + actionRandom + " " + whatRandom + " " + whenRandom;
+      //alert excuse;
+      document.getElementById("RandomTextHere").innerHTML = excuse;
+    }
+  </script>
   <body>
     <div class="conatiner-fluid">
       <div class="conatiner d-flex justify-center m-3">
         <div class="row">
-          <div class="col">
-            <button class="btn btn-warning" onclick="generateExcuse()">
+          <div class="col-12">
+            <button
+              class="btn btn-warning mr-5 position-absolute"
+              onclick="getExcuse()"
+            >
               Generar Excusa
             </button>
           </div>
+        </div>
+        <div class="row">
           <div class="col">
-            <p id="RandomTextHere"></p>
+            <h3 id="RandomTextHere" class="position-absolute"></h3>
           </div>
         </div>
       </div>

@@ -1,1 +1,17 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+    background-image: url("https://wallpapercave.com/wp/wp4033961.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+button {
+    margin-top: 20px;
+}
+
+h1 {
+    margin-top: 200px;
+}
