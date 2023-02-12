@@ -9,17 +9,17 @@ const when = [
   "while I was praying"
 ];
 
-//function getRandomNumber(arrlength) {
- // return Math.floor(Math.random() * arrlength)
-//}
-
-//function getRandomItem(arr){
-//  return arr[getRandomNumber];
-//}
-
-function getRandomItem(arr) {
-  // get random index value
-const randomIndex = Math.floor(Math.random() * arr.length);
-  // get random item
-return arr[randomIndex];
+function getRandomNumber(arrlength) {
+  return Math.floor(Math.random() * arrlength)
 }
+
+function getRandomItem(arr){
+  return arr[getRandomNumber(arr.length)];
+}
+
+//function getRandomItem(arr) {
+  // get random index value
+//const randomIndex = Math.floor(Math.random() * arr.length);
+  // get random item
+//return arr[randomIndex];
+//}
