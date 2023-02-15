@@ -23,12 +23,12 @@
   </head>
   <script>
     function getExcuse() {
-      let whoRandom = getRandomItem(who);
-      let actionRandom = getRandomItem(action);
-      let whatRandom = getRandomItem(what);
-      let whenRandom = getRandomItem(when);
-      let excuse =
-        whoRandom + " " + actionRandom + " " + whatRandom + " " + whenRandom;
+      const whoRandom = getRandomItem(who);
+      const actionRandom = getRandomItem(action);
+      const whatRandom = getRandomItem(what);
+      const whenRandom = getRandomItem(when);
+      const excuse = "";
+      whoRandom + " " + actionRandom + " " + whatRandom + " " + whenRandom;
       //alert excuse;
       document.getElementById("RandomTextHere").innerHTML = excuse;
     }
