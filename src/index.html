@@ -22,16 +22,26 @@
     <script type="text/javascript" src="funciones.js"></script>
   </head>
   <script>
-    function getExcuse() {
+    const getExcuse = () => {
       const whoRandom = getRandomItem(who);
       const actionRandom = getRandomItem(action);
       const whatRandom = getRandomItem(what);
       const whenRandom = getRandomItem(when);
-      const excuse = "";
-      whoRandom + " " + actionRandom + " " + whatRandom + " " + whenRandom;
+      const excuse = `${whoRandom} ${actionRandom} ${whatRandom} ${whenRandom} `;
       //alert excuse;
       document.getElementById("RandomTextHere").innerHTML = excuse;
-    }
+    };
+
+    //function getExcuse() {
+    //  const whoRandom = getRandomItem(who);
+    //  const actionRandom = getRandomItem(action);
+    //  const whatRandom = getRandomItem(what);
+    //  const whenRandom = getRandomItem(when);
+    //  const excuse = "";
+    //  whoRandom + " " + actionRandom + " " + whatRandom + " " + whenRandom;
+    //alert excuse;
+    //  document.getElementById("RandomTextHere").innerHTML = excuse;
+    //}
   </script>
   <body>
     <div class="conatiner-fluid">
@@ -42,13 +52,15 @@
               class="btn btn-warning mr-5 position-absolute"
               onclick="getExcuse()"
             >
-              Generar Excusa
+              Push me!
             </button>
           </div>
         </div>
         <div class="row">
           <div class="col">
-            <h3 id="RandomTextHere"></h3>
+            <h3 id="RandomTextHere">
+              You didnt finish your homework? Dont worry!
+            </h3>
           </div>
         </div>
       </div>

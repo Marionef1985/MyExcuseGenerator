@@ -1,21 +1,18 @@
-const who = ["The dog", "My grandma", "His turtle", "My bird"];
+const who = ["The cat", "My grandma", "His turtle", "My bird"];
 const action = ["ate", "peed", "crushed", "broke"];
-const what = ["my homework", "the keys", "the car"];
+const what = ["my homework", "the printer", "the project"];
 const when = [
   "before the class",
   "right on time",
   "when I finished",
   "during my lunch",
-  "while I was praying"
+  "while I was comming here"
 ];
 
-function getRandomNumber(arrlength) {
-  return Math.floor(Math.random() * arrlength)
-}
 
-function getRandomItem(arr){
-  return arr[getRandomNumber(arr.length)];
-}
+const getRandomNumber = arrlength => Math.floor(Math.random()*arrlength);
+const getRandomItem = arr => arr[Math.floor(Math.random()*arr.length)];
+
 
 //function getRandomItem(arr) {
   // get random index value
