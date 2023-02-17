@@ -11,7 +11,7 @@ const when = [
 
 
 const getRandomNumber = arrlength => Math.floor(Math.random()*arrlength);
-const getRandomItem = arr => arr[Math.floor(Math.random()*arr.length)];
+const getRandomItem = arr => arr[(getRandomNumber * arr.length)];
 
 
 //function getRandomItem(arr) {
